@@ -9,6 +9,7 @@ export default function Home() {
   return (
     <main>
       <div className="text-[50px] bg-white items-center font-semibold">Home</div>
+      <p className="text-white">click the menu bar</p>
       {/* <Landing />
       <Rewriter />
       <Curriculum />
