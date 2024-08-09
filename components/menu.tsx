@@ -5,7 +5,7 @@ import Link from "next/link"
 
 export const Menu = () => {
   return (
-    <div className=" md:flex md:flex-col h-[895px]  pt-3  w-[300px] items-center ml-[6px] mt-[35px]  text-[#ffffff] border-solid border-2 rounded-xl border-white">
+    <div className="hidden md:flex md:flex-col h-[895px]  pt-3  w-[300px] items-center ml-[6px] mt-[35px]  text-[#ffffff] border-solid border-2 rounded-xl border-white">
       <div>
         <Image src="/logo.png" alt="DAWN LOGO" width={158} height={33} className="w-[120px]" />
       </div>
