@@ -2,32 +2,68 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@layer utilities{
+  .btn_secondary{
+    @apply px-8 py-3
   }
-}
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
+  .box{
+    @apply bg-[#111010] rounded-[15px] md:rounded-lg py-5 px-8
+  }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .sections{
+    @apply w-full relative text-[#ffffff]  md:min-h-[1049px] pt-[70px]  md:pt-[106px] md:w-[787px] md:px-[50px] mt-[48px] rounded-[15px] md:bg-[#070707]/50
+  }
+
+  .header-p{
+    @apply max-sm:w-80 mx-auto mt-2 md:mt-12
+  }
+
+  .textarea{
+    @apply  bg-neutral-950 md:bg-[#222325] rounded-[16.41px] md:rounded-[7px] pt-[20px] md:pt-[33px] 
+  }
+
+  .max-container{
+    @apply mx-auto max-w-[1440px]
+  }
+
+  .align-center{
+    @apply flex justify-center items-center
+  }
+
+  /* font size section */
+  .regular-h2{
+    @apply text-[20px] md:text-[33px] font-semibold leading-relaxed
+  }
+
+  .regular-h3{
+    @apply text-[15px] md:text-[20px] font-semibold leading-relaxed
+  }
+
+  .regular-p{
+    @apply font-semibold text-[10px] md:text-[20px] leading-relaxed 
+  }
+
+
+  .regular-12{
+    @apply font-light text-[12px] lg:text-[20] md:font-semibold leading-relaxed
+  }
+
+  .bg_gradient{
+    background: linear-gradient(to bottom, #222325 70%, #E815C6 100%) no-repeat;
+  }
+
+  .button_gradient{
+    background: linear-gradient(to bottom,  #FF4FC3 0%, #992F75 100%) no-repeat;
+  }
+
+  .menu_gradient{
+    background: linear-gradient(to right,  #721181 0%, #50055B 100%) no-repeat;
   }
 }
